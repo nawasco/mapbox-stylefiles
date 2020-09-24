@@ -6988,23 +6988,6 @@
           }
       },
       {
-          "id": "blocks-annotation",
-          "type": "symbol",
-          "source": "assets",
-          "source-layer": "blocks_annotation",
-          "minzoom": 10,
-          "layout": {
-              "text-field": ["to-string", ["get", "BLOCK"]],
-              "text-font": ["sans"],
-              "text-size": 14
-          },
-          "paint": {
-              "text-color": "hsl(120, 45%, 29%)",
-              "text-halo-color": "#ffffff",
-              "text-halo-width": 1
-          }
-      },
-      {
           "id": "pipeline",
           "type": "line",
           "source": "assets",
@@ -7014,27 +6997,6 @@
           "paint": {"line-color": "hsl(240, 100%, 50%)"}
       },
       {
-          "id": "pipeline_annotation",
-          "type": "symbol",
-          "source": "assets",
-          "source-layer": "pipeline",
-          "minzoom": 13,
-          "layout": {
-              "text-field": [
-                  "concat",
-                  ["to-string", ["get", "size"]],
-                  " ",
-                  ["get", "ppmaterial"],
-                  " ",
-                  ["get", "year_of_in"]
-              ],
-              "text-size": 12,
-              "symbol-placement": "line",
-              "text-font": ["sans"]
-          },
-          "paint": {"text-halo-color": "#ffffff", "text-halo-width": 1}
-      },
-      {
           "id": "sewerline",
           "type": "line",
           "source": "assets",
@@ -7042,25 +7004,6 @@
           "minzoom": 10,
           "layout": {},
           "paint": {"line-color": "hsl(0, 100%, 50%)"}
-      },
-      {
-          "id": "sewerline_annotation",
-          "type": "symbol",
-          "source": "assets",
-          "source-layer": "sewerline",
-          "minzoom": 13,
-          "layout": {
-              "text-field": [
-                  "concat",
-                  ["to-string", ["get", "size"]],
-                  " ",
-                  ["get", "material"]
-              ],
-              "text-size": 12,
-              "symbol-placement": "line",
-              "text-font": ["sans"]
-          },
-          "paint": {"text-halo-color": "#ffffff", "text-halo-width": 1}
       },
       {
           "id": "tank",
@@ -7152,6 +7095,66 @@
               ]
           },
           "paint": {}
+      },
+      {
+        "id": "blocks-annotation",
+        "type": "symbol",
+        "source": "assets",
+        "source-layer": "blocks_annotation",
+        "minzoom": 10,
+        "layout": {
+            "text-field": ["to-string", ["get", "BLOCK"]],
+            "text-font": ["sans"],
+            "text-size": 14,
+            "icon-image": "pe-regional-4",
+            "icon-text-fit": "both",
+            "icon-size": 1.2
+        },
+        "paint": {
+            "text-color": "hsl(120, 45%, 29%)",
+            "text-halo-color": "#ffffff",
+            "text-halo-width": 1
+        }
+      },
+      {
+        "id": "pipeline_annotation",
+        "type": "symbol",
+        "source": "assets",
+        "source-layer": "pipeline",
+        "minzoom": 13,
+        "layout": {
+            "text-field": [
+                "concat",
+                ["to-string", ["get", "size"]],
+                " ",
+                ["get", "ppmaterial"],
+                " ",
+                ["get", "year_of_in"]
+            ],
+            "text-size": 12,
+            "symbol-placement": "line",
+            "text-font": ["sans"]
+        },
+        "paint": {"text-halo-color": "#ffffff", "text-halo-width": 1}
+      },
+      {
+        "id": "sewerline_annotation",
+        "type": "symbol",
+        "source": "assets",
+        "source-layer": "sewerline",
+        "minzoom": 13,
+        "layout": {
+            "text-field": [
+                "concat",
+                ["to-string", ["get", "size"]],
+                " ",
+                ["get", "material"]
+            ],
+            "text-size": 12,
+            "symbol-placement": "line",
+            "text-font": ["sans"]
+        },
+        "paint": {"text-halo-color": "#ffffff", "text-halo-width": 1}
       }
     ]
 }

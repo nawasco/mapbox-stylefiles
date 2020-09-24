@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/narwassco/mapbox-stylefiles.git"
+    "url": "git+https://github.com/nawasco/mapbox-stylefiles.git"
   },
   "author": "Jin IGARASHI",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/narwassco/mapbox-stylefiles/issues"
+    "url": "https://github.com/nawasco/mapbox-stylefiles/issues"
   },
-  "homepage": "https://github.com/narwassco/mapbox-stylefiles#readme",
+  "homepage": "https://github.com/nawasco/mapbox-stylefiles#readme",
   "dependencies": {
     "@watergis/sprite-creator": "^0.1.0"
   }

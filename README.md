@@ -1,5 +1,5 @@
 # mapbox-stylefiles
-![GitHub](https://img.shields.io/github/license/narwassco/mapbox-stylefiles)
+![GitHub](https://img.shields.io/github/license/nawasco/mapbox-stylefiles)
 
 This repository manages Mapbox Stylefile for the applicaiton.
 
@@ -13,14 +13,14 @@ Download the following repositories under the directory of `icons`.
 mkdir icons
 cd icons
 git clone https://github.com/mapbox/maki.git
-git clone https://github.com/narwassco/water-icons.git
+git clone https://github.com/nawasco/water-icons.git
 git clone https://github.com/narwassco/mapbox-street-icons.git
 git clone https://github.com/narwassco/mapbox-satellite-icons.git
 ```
 
 ### Install & Generate Sprite files
 ```
-git clone https://github.com/narwassco/mapbox-stylefiles.git
+git clone https://github.com/nawasco/mapbox-stylefiles.git
 cd mapbox-stylefiles
 npm i
 npm run sprite

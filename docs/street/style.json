@@ -6374,6 +6374,15 @@
             }
         },
         {
+            "id": "waterworks",
+            "type": "line",
+            "source": "assets",
+            "source-layer": "t_wrks",
+            "paint": {
+              "line-color": "rgba(119, 47, 47, 1)"
+            }
+        },
+        {
             "id": "pipeline",
             "type": "line",
             "source": "assets",

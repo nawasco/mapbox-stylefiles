@@ -25,7 +25,7 @@
       }
     },
     "sprite": "https://nawasco.github.io/mapbox-stylefiles/satellite/sprite/sprite",
-    "glyphs": "mapbox://fonts/jin-igarashi/{fontstack}/{range}.pbf",
+    "glyphs": "https://optgeo.github.io/kokoromi-ke/font/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",

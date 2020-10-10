@@ -4790,7 +4790,7 @@
             "minzoom": 10,
             "layout": {},
             "paint": {
-                "line-color": "rgba(39, 138, 39, 1)",
+                "line-color": "rgba(255, 113, 27, 1)",
                 "line-width": 2
             }
         },

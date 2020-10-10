@@ -4765,106 +4765,24 @@
             }
         },
         {
-            "id": "waterworks",
+            "id": "sewerline",
             "type": "line",
             "source": "assets",
-            "source-layer": "t_wrks",
-            "paint": {
-              "line-color": "rgba(119, 47, 47, 1)"
-            }
-        },
-        {
-            "id": "pipeline",
-            "type": "line",
-            "source": "assets",
-            "source-layer": "pipeline",
+            "source-layer": "sewerline",
             "minzoom": 10,
             "layout": {},
             "paint": {
-                "line-color": "hsl(240, 100%, 50%)",
+                "line-color": "rgba(255, 113, 27, 1)",
                 "line-width": 2
             }
         },
         {
-            "id": "tank",
+            "id": "manholes",
             "type": "symbol",
             "source": "assets",
-            "source-layer": "tank",
-            "minzoom": 12,
-            "layout": {"icon-image": "reservoir"},
-            "paint": {}
-        },
-        {
-            "id": "borehole",
-            "type": "symbol",
-            "source": "assets",
-            "source-layer": "borehole",
-            "minzoom": 12,
-            "layout": {"icon-image": "watersource"},
-            "paint": {}
-        },
-        {
-            "id": "booster-pump",
-            "type": "symbol",
-            "source": "assets",
-            "source-layer": "booster_pump",
-            "minzoom": 12,
-            "layout": {"icon-image": "pump"},
-            "paint": {}
-        },
-        {
-            "id": "chambers",
-            "type": "symbol",
-            "source": "assets",
-            "source-layer": "chambers",
-            "minzoom": 14,
-            "layout": {"icon-image": "valve"},
-            "paint": {}
-        },
-        {
-            "id": "kiosks",
-            "type": "symbol",
-            "source": "assets",
-            "source-layer": "kiosks",
-            "minzoom": 12,
-            "layout": {"icon-image": "waterkiosk"},
-            "paint": {}
-        },
-        {
-            "id": "meter",
-            "type": "symbol",
-            "source": "assets",
-            "source-layer": "meter",
-            "minzoom": 16,
-            "layout": {
-                "icon-image": [
-                    "match",
-                    ["get", "status"],
-                    ["ActiveL", "Active", "Active ", "ok"],
-                    "meter_functional",
-                    [
-                        "closed",
-                        "Closed",
-                        "Closed ",
-                        "Discconnected",
-                        "Disconnected",
-                        "Discoonected",
-                        "Not Connected"
-                    ],
-                    "meter_abandoned",
-                    [
-                        "Unkwown ",
-                        "Unknown ",
-                        "unknown ",
-                        "Unkown",
-                        "Francis Macharia",
-                        " L 32 likii B",
-                        "Ichuga"
-                    ],
-                    "meter_partially",
-                    "meter"
-                ]
-            },
+            "source-layer": "manholes",
+            "minzoom": 15,
+            "layout": {"icon-image": "manhole"},
             "paint": {}
         },
         {
@@ -4888,19 +4806,17 @@
             }
         },
         {
-            "id": "pipeline_annotation",
+            "id": "sewerline_annotation",
             "type": "symbol",
             "source": "assets",
-            "source-layer": "pipeline",
+            "source-layer": "sewerline",
             "minzoom": 13,
             "layout": {
                 "text-field": [
                     "concat",
                     ["to-string", ["get", "size"]],
                     " ",
-                    ["get", "ppmaterial"],
-                    " ",
-                    ["get", "year_of_in"]
+                    ["get", "material"]
                 ],
                 "text-size": 12,
                 "symbol-placement": "line"

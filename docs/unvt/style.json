@@ -6290,7 +6290,7 @@
                 ]
               ],
               "text-font": [
-                "Roboto Bold"
+                "Roboto Regular"
               ],
               "text-offset": [
                 0,
@@ -6361,7 +6361,7 @@
                 ]
               ],
               "text-font": [
-                "Roboto Bold"
+                "Roboto Regular"
               ],
               "text-offset": [
                 0,
@@ -6491,7 +6491,7 @@
               "symbol-placement": "line",
               "text-field": "{name}",
               "text-font": [
-                "Roboto Bold"
+                "Roboto Regular"
               ],
               "text-offset": [
                 "step",
@@ -6832,7 +6832,7 @@
                 ]
               ],
               "text-font": [
-                "Roboto Bold"
+                "Roboto Regular"
               ],
               "text-offset": [
                 "step",
@@ -6972,7 +6972,7 @@
           "layout": {
             "text-size": 10, 
             "text-field": ["get", "plot_no"],
-            "text-font": ["Roboto Bold"],
+            "text-font": ["Roboto Regular"],
             "visibility": "none"
           },
           "paint": {"text-halo-color": "#ffffff", "text-halo-width": 1}
@@ -7083,6 +7083,9 @@
           "layout": {
             "text-size": 10, 
             "text-field": ["get", "accountno"],
+            "text-variable-anchor": ["top", "bottom", "left", "right"],
+            "text-radial-offset": 1.0,
+            "text-justify": "auto",
             "text-font": ["Roboto Regular"],
             "icon-image": [
                 "match",
@@ -7122,7 +7125,7 @@
         "minzoom": 10,
         "layout": {
             "text-field": ["to-string", ["get", "BLOCK"]],
-            "text-font": ["Roboto Bold"],
+            "text-font": ["Roboto Regular"],
             "text-size": 12,
             "icon-image": "pe-regional-4",
             "icon-text-fit": "both",
@@ -7151,7 +7154,7 @@
             ],
             "text-size": 12,
             "symbol-placement": "line",
-            "text-font": ["Roboto Bold"]
+            "text-font": ["Roboto Regular"]
         },
         "paint": {"text-halo-color": "#ffffff", "text-halo-width": 1}
       },
@@ -7170,7 +7173,7 @@
             ],
             "text-size": 12,
             "symbol-placement": "line",
-            "text-font": ["Roboto Bold"]
+            "text-font": ["Roboto Regular"]
         },
         "paint": {"text-halo-color": "#ffffff", "text-halo-width": 1}
       }

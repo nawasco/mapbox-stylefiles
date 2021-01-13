@@ -6348,7 +6348,9 @@
             "source": "assets",
             "source-layer": "cadastral",
             "minzoom": 15,
-            "layout": {},
+            "layout": {
+              "visibility": "none"
+            },
             "paint": {"line-width": 0.6}
         },
         {
@@ -6357,7 +6359,12 @@
             "source": "assets",
             "source-layer": "cadastral_annotation",
             "minzoom": 16,
-            "layout": {"text-size": 10, "text-field": ["get", "plot_no"]},
+            "layout": {
+              "text-size": 10, 
+              "text-field": ["get", "plot_no"],
+              "text-font": ["Roboto Regular"],
+              "visibility": "none"
+            },
             "paint": {"text-halo-color": "#ffffff", "text-halo-width": 1}
         },
         {
@@ -6443,6 +6450,12 @@
             "source-layer": "meter",
             "minzoom": 16,
             "layout": {
+                "text-size": 10, 
+                "text-field": ["get", "accountno"],
+                "text-variable-anchor": ["top", "bottom", "left", "right"],
+                "text-radial-offset": 1.0,
+                "text-justify": "auto",
+                "text-font": ["Roboto Regular"],
                 "icon-image": [
                     "match",
                     ["get", "status"],
@@ -6469,9 +6482,9 @@
                     ],
                     "meter_partially",
                     "meter"
-                ]
+              ]
             },
-            "paint": {}
+            "paint": {"text-halo-color": "#ffffff", "text-halo-width": 1}
         },
         {
             "id": "blocks-annotation",

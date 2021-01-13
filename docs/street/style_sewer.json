@@ -6348,7 +6348,9 @@
             "source": "assets",
             "source-layer": "cadastral",
             "minzoom": 15,
-            "layout": {},
+            "layout": {
+              "visibility": "none"
+            },
             "paint": {"line-width": 0.6}
         },
         {
@@ -6357,7 +6359,12 @@
             "source": "assets",
             "source-layer": "cadastral_annotation",
             "minzoom": 16,
-            "layout": {"text-size": 10, "text-field": ["get", "plot_no"]},
+            "layout": {
+              "text-size": 10, 
+              "text-field": ["get", "plot_no"],
+              "text-font": ["Roboto Regular"],
+              "visibility": "none"
+            },
             "paint": {"text-halo-color": "#ffffff", "text-halo-width": 1}
         },
         {

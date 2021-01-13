@@ -4753,7 +4753,7 @@
             "layout": {
               "text-size": 10, 
               "text-field": ["get", "plot_no"],
-              "text-font": ["Roboto Bold"],
+              "text-font": ["Roboto Regular"],
               "visibility": "none"
             },
             "paint": {"text-halo-color": "#ffffff", "text-halo-width": 1}
